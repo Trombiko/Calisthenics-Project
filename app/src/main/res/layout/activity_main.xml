@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLifeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/calisthenicslifestyle" />
+
+
+    <ImageView
+        android:id="@+id/imageViewLinia1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewLifeStyle"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/liniaczarna" />
+
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageViewLinia1"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewPushUpIcon"
+        android:layout_width="125dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/pushupicon" />
+
+    <TextView
+        android:id="@+id/textViewPushUp"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="125dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="Push up" />
+
+    <ImageView
+        android:id="@+id/imageViewInfoButton1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewPushUp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageViewPushUpIcon"
+        app:srcCompat="@drawable/infobutton" />
+
+    <ImageView
+        android:id="@+id/imageViewWorkOutButton1"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewPushUp"
+        android:layout_toRightOf="@+id/imageViewInfoButton1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/workoutbutton" />
+
+    <ImageView
+        android:id="@+id/imageViewLinia2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewWorkOutButton1"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/liniaczarna" />
+
+
+            <ImageView
+                android:id="@+id/imageViewPullUpIcon"
+                android:layout_width="125dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/imageViewLinia2"
+                app:srcCompat="@drawable/pullupicon" />
+
+            <TextView
+                android:id="@+id/textViewPullUp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="125dp"
+                android:layout_below="@+id/imageViewLinia2"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Pull up" />
+
+
+            <ImageView
+                android:id="@+id/imageViewInfoButton2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewPullUp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageViewPullUpIcon"
+                app:srcCompat="@drawable/infobutton" />
+
+            <ImageView
+                android:id="@+id/imageViewWorkOutButton2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewPullUp"
+                android:layout_toRightOf="@+id/imageViewInfoButton2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/workoutbutton" />
+
+            <ImageView
+                android:id="@+id/imageViewLinia3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewWorkOutButton2"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/liniaczarna" />
+
+
+            <ImageView
+                android:id="@+id/imageViewDipsIcon"
+                android:layout_width="125dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/imageViewLinia3"
+                app:srcCompat="@drawable/dipsexcersisecion" />
+
+            <TextView
+                android:id="@+id/textViewDips"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="125dp"
+                android:layout_below="@+id/imageViewLinia3"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Dips" />
+
+            <ImageView
+                android:id="@+id/imageViewInfoButton3"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewDips"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageViewDipsIcon"
+                app:srcCompat="@drawable/infobutton" />
+
+            <ImageView
+                android:id="@+id/imageViewWorkOutButton3"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewDips"
+                android:layout_toRightOf="@+id/imageViewInfoButton3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/workoutbutton" />
+
+
+            <ImageView
+                android:id="@+id/imageViewLinia4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewDipsIcon"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/liniaczarna" />
+
+
+            <ImageView
+                android:id="@+id/imageViewMuscleUp"
+                android:layout_width="125dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/imageViewLinia4"
+                app:srcCompat="@drawable/muscleupicon" />
+
+            <TextView
+                android:id="@+id/textViewMuscleUp"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="125dp"
+                android:layout_below="@+id/imageViewLinia4"
+                android:gravity="center"
+                android:textSize="50sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Muscle up" />
+
+            <ImageView
+                android:id="@+id/imageViewInfoButton4"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewMuscleUp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/imageViewMuscleUp"
+                app:srcCompat="@drawable/infobutton" />
+
+            <ImageView
+                android:id="@+id/imageViewWorkOutButton4"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textViewMuscleUp"
+                android:layout_toRightOf="@+id/imageViewInfoButton4"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/workoutbutton" />
+
+
+
+            <ImageView
+                android:id="@+id/imageViewLinia5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewWorkOutButton4"
+                android:layout_marginTop="2dp"
+                app:srcCompat="@drawable/liniaczarna" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
