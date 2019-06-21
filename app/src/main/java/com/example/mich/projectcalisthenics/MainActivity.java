@@ -123,7 +123,8 @@ public class MainActivity extends AppCompatActivity{
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) { // Docelowo miało być Popup Menu, lecz nie udało się osiągnąć zamierzonego celu
+
         switch (item.getItemId()) {
             case R.id.item1:
                 Intent intent = new Intent(MainActivity.this, HistoryTraining.class);

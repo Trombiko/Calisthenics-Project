@@ -77,7 +77,7 @@ public class HistoryTraining extends AppCompatActivity {
         alert.show();
     }
 
-    public void deleteAll()
+    public void deleteAll() // Rozgryzione usuwanie rekordów bazy danych po dokladnym przeanalizowaniu bazy danych
     {
 
         String sqlDoesNotExist = "DELETE FROM TrainingSessions WHERE Training IS NOT NULL";
@@ -89,7 +89,7 @@ public class HistoryTraining extends AppCompatActivity {
         showAll();
     }
 
-    public void showAll()
+    public void showAll()  // Listowanie bazy danych zainspirowane kodem z stackoverflow
     {
         ArrayList<String> wyniki = new ArrayList<>();
         Cursor cursor = database.rawQuery("SELECT Training FROM TrainingSessions", null);

@@ -136,7 +136,7 @@ public class CounterDown extends MainActivity{
     }
 
     @Override
-    protected void onStart()
+    protected void onStart() // on start Activity
     {
         super.onStart();
 
@@ -165,7 +165,6 @@ public class CounterDown extends MainActivity{
                 dialog.dismiss();
             }
         });
-
         builder.setNegativeButton("YES", new DialogInterface.OnClickListener() {
 
             @Override
@@ -197,7 +196,7 @@ public class CounterDown extends MainActivity{
         }
     }
 
-    public void startTimer()
+    public void startTimer() // Timer zainspirowany przykładami z internetu
     {
         countDownTimer = new CountDownTimer(timeLeftInMilliseconds, 1000) {
             @Override
@@ -420,7 +419,7 @@ public class CounterDown extends MainActivity{
         timerRunning = false;
     }
 
-    public void updateTimer()
+    public void updateTimer()  // Aktualizacja Timer'a zainspirowany internetowymi przykladami
     {
         int minutes = (int) timeLeftInMilliseconds / 60000;
         int seconds = (int) timeLeftInMilliseconds % 60000 / 1000;

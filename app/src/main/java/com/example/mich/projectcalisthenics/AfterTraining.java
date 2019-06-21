@@ -74,7 +74,7 @@ public class AfterTraining extends AppCompatActivity {
 
 
 
-    public void addTraining()
+    public void addTraining() // Zainspirowane programami znalezionymi w internecie
     {
             base = openOrCreateDatabase("TrainingSessions", MODE_PRIVATE, null);
 
